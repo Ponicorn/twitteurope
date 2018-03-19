@@ -1,14 +1,10 @@
 {
-  "name": "twop",
+  "name": "twitteurope",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon app"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ponicorn/twop.git"
   },
   "author": "",
   "license": "ISC",
