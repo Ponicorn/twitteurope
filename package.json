@@ -1,0 +1,28 @@
+{
+  "name": "twop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ponicorn/twop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ponicorn/twop/issues"
+  },
+  "homepage": "https://github.com/Ponicorn/twop#readme",
+  "devDependencies": {
+    "dotenv": "^5.0.1",
+    "nodemon": "^1.17.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.0.4",
+    "twitter": "^1.7.1"
+  }
+}
