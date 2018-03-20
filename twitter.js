@@ -10,7 +10,7 @@ const client = new Twitter({
 
 // balance ta fonction
 module.exports = (track, callback) => {
-  return client.stream('statuses/filter', { track }, (stream) => {
+  return client.stream('statuses/filter', { track: `#${track}` }, (stream) => {
     stream.on('error', (error) => { throw error })
     stream.on('data', callback)
   })
