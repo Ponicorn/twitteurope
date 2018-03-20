@@ -11,10 +11,10 @@ function popit() {
 
   // Create element
   let popit = document.createElement('i')
-  popit.className = 'material-icons popit'
+  popit.className = 'popit fas fa-star'
   popit.style.top =  `${Math.floor(Math.random() * ymax) }px`
   popit.style.left = `${Math.floor(Math.random() * xmax) }px`
-  popit.innerHTML = 'star_rate'
+  // popit.innerHTML = 'star_rate'
 
   // Pop element
   document.getElementById('popitbox').appendChild(popit)
