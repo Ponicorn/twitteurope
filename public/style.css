@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,700');
+
 html,
 body {
   padding: 0;
@@ -7,14 +9,41 @@ body {
 }
 
 .popit {
-  font-size: 50px;
-  height: 50px;
-  width: 50px;
-  color: #FFCC00;
+  /* height: 50px;
+  width: 50px; */
+  display: flex;
+  align-items: center;
   position: absolute;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .popit img {
-  width: 100%;
-  height: 100%;
+  height: 60px;
+  width: 60px;
+}
+
+.popit .name {
+  text-decoration: none;
+  cursor: pointer;
+  display: none;
+  box-sizing: border-box;
+  background: #e5e5e5;
+  color: #222222;
+  padding: 5px;
+  border-radius: 2px;
+  text-align: center;
+  left: 50%;
+} 
+
+.popit .name p {
+  padding: 0;
+  margin: 0;
+}
+
+.popit .name p:first-child {
+  font-weight: bold;
+}
+
+.popit:hover .name{
+  display: block;
 }

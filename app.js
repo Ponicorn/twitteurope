@@ -18,7 +18,5 @@ app.use('/public', express.static('public'))
 http.listen(process.env.PORT, console.log(`listening on port ${process.env.PORT}`))
 
 
-// Partie balance la sauche
-// TODO: Replacer l'api twitter, 
-//       Fermer le stream quand personne n'est connecter
-twitter(process.env.FILTER||'europe', (data) => io.emit('popit', data.text))
+let stream = twitter(process.env.FILTER||'europe')
+stream.on('data', (data) => io.emit('popit', data))
