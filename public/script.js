@@ -12,7 +12,7 @@ function popit(data) {
   let popit = document.createElement('div')
   popit.className = 'popit'
   let star = '<img src="/public/star.svg" alt="EU star">'
-  let name = `<a target="_blank" href="https://twitter.com/statuses/${data.id}" class="name"><p>${data.user.name}</p><p>@${data.user.screen_name}</p></a>`
+  let name = `<a target="_blank" href="https://twitter.com/statuses/${data.id_str}" class="name"><p>${data.user.name}</p><p>@${data.user.screen_name}</p></a>`
 
   let x = Math.floor(Math.random() * xmax)
   let y = Math.floor(Math.random() * ymax)  
