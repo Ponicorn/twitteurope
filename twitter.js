@@ -8,14 +8,6 @@ const client = new Twitter({
   access_token_secret: process.env.ACCESS_TOKEN_SECRET,
 })
 
-// balance ta fonction
-// module.exports = (track, callback) => {
-//   return client.stream('statuses/filter', { track: `#${track}` }, (stream) => {
-//     stream.on('error', (error) => { throw error })
-//     stream.on('data', callback)
-//   })
-// }
-
 module.exports = (track) => {
-  return client.stream('statuses/filter', { track: `#${track}` })
+  return client.stream('statuses/filter', { track: `${track}` })
 }
