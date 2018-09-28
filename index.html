@@ -10,11 +10,6 @@
 
     <div id="popitbox">
       <div class="popit" v-for="popit in popits" :style="popit.style">
-        <img src="/public/star.svg" alt="EU star" v-if="popit.style.left">
-        <a target="_blank" :href="popit.url" class="name">
-          <p>{{ popit.name }}</p>
-          <p>@{{ popit.nameat }}</p>
-        </a>
         <img src="/public/star.svg" alt="EU star" v-if="popit.style.right">        
       </div>
     </div>
